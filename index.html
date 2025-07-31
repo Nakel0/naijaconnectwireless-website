@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaijaConnect Wireless</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#registration">Register</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to NaijaConnect Wireless</h1>
+            <p>Your affordable, contract-free mobile service provider</p>
+            <a href="#plans" class="cta-button">Explore Our Plans</a>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans">
+        <h2>Our Mobile Plans</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>#30000/month</p>
+                <ul>
+                    <li>15GB Data</li>
+                    <li>Unlimited Text</li>
+                    <li>Unlimites Minutes</li>
+                </ul>
+                <a href="#contact" class="cta-button">Sign Up</a>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>#50000/month</p>
+                <ul>
+                    <li>30GB Data</li>
+                    <li>Unlimited Text</li>
+                    <li>Unlimited Minutes</li>
+                </ul>
+                <a href="#contact" class="cta-button">Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About NaijaConnect Wireless</h2>
+        <p>At NaijaConnect, we believe that mobile connectivity should be affordable and accessible to everyone. Our mission is to provide reliable, contract-free mobile services for individuals, families, and businesses.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="submit_form.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NaijaConnect Wireless | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
