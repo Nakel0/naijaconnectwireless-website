@@ -4,7 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NaijaConnect Wireless</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .cta-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        .hero {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Plans Section */
+        #plans {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffffff;
+        }
+
+        #plans h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .plan {
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 200px;
+            border-radius: 8px;
+        }
+
+        .plan h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .plan p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #about {
+            padding: 50px 20px;
+            background-color: #e9ecef;
+            text-align: center;
+        }
+
+        #contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        #contact form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        #contact form input, #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,7 +152,6 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#registration">Register</a></li>
                 <li><a href="#plans">Plans</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -36,17 +174,17 @@
         <div class="plans">
             <div class="plan">
                 <h3>Basic Plan</h3>
-                <p>#30000/month</p>
+                <p>₦30,000/month</p>
                 <ul>
                     <li>15GB Data</li>
                     <li>Unlimited Text</li>
-                    <li>Unlimites Minutes</li>
+                    <li>500 Minutes</li>
                 </ul>
                 <a href="#contact" class="cta-button">Sign Up</a>
             </div>
             <div class="plan">
                 <h3>Premium Plan</h3>
-                <p>#50000/month</p>
+                <p>₦50,000/month</p>
                 <ul>
                     <li>30GB Data</li>
                     <li>Unlimited Text</li>
@@ -85,6 +223,19 @@
         <p>&copy; 2025 NaijaConnect Wireless | All rights reserved</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Internal JavaScript -->
+    <script>
+        // JavaScript for form validation
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !message) {
+                alert("Please fill out all fields!");
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
